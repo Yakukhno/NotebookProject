@@ -5,6 +5,6 @@ package ua.training.models;
  */
 public enum Group {
 
-    FRIENDS, RELATIVES, COLLEAGUES, OTHER
+    FRIENDS, RELATIVES, COLLEAGUES, OTHERS
 
 }

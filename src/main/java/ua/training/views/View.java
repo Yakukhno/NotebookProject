@@ -5,16 +5,21 @@ package ua.training.views;
  */
 public class View {
 
-    public static final String WELCOME_MESSAGE = "Hello, please, enter information about subscriber";
+    public static final String WELCOME_MESSAGE = "Hello, please, enter" +
+            " information about subscriber";
     public static final String FIRST_NAME_MESSAGE = "Please, enter first name:";
     public static final String LAST_NAME_MESSAGE = "Please, enter last name:";
     public static final String MIDDLE_NAME_MESSAGE = "Please, enter middle name:";
     public static final String USERNAME_MESSAGE = "Please, enter username:";
     public static final String COMMENT_MESSAGE = "Please, enter comment:";
-    public static final String GROUP_MESSAGE = "Please, enter group:";
-    public static final String HOME_PHONE_MESSAGE = "Please, enter home phone number:";
-    public static final String CELL_PHONE_MESSAGE = "Please, enter cell phone number:";
-    public static final String OPTIONAL_CELL_PHONE_MESSAGE = "Please, enter second cell phone number(optional):";
+    public static final String GROUP_MESSAGE = "Please, choose group from" +
+            " following: Relatives, Friends, Colleagues, Others:";
+    public static final String HOME_PHONE_MESSAGE = "Please, enter" +
+            " home phone number in format 0-yyy-xxxxxx:";
+    public static final String CELL_PHONE_MESSAGE = "Please, enter" +
+            " cell phone number in format 0yy-xxx-xx-xx:";
+    public static final String OPTIONAL_CELL_PHONE_MESSAGE = "Please, enter" +
+            " second cell phone number(optional):";
     public static final String EMAIL_MESSAGE = "Please, enter email:";
     public static final String SKYPE_MESSAGE = "Please, enter skype:";
     public static final String ADDRESS_MESSAGE = "Please, enter address:";

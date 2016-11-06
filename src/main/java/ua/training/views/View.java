@@ -23,7 +23,7 @@ public class View {
     public static final String STREET_MESSAGE = "Street:";
     public static final String HOME_NUMBER_MESSAGE = "Home:";
     public static final String FLAT_NUMBER_MESSAGE = "Flat:";
-    public static final String ERROR_MESSAGE = "Wrong input data";
+    public static final String ERROR_MESSAGE = "Wrong input data, enter again:";
 
     public void showMessage(String string) {
         System.out.println(string);

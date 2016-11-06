@@ -1,13 +1,20 @@
 package ua.training;
 
+import ua.training.controllers.NoteController;
+import ua.training.models.Note;
+import ua.training.views.View;
+
 /**
- * Hello world!
+ * Main class
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class App {
+
+    public static void main(String[] args) {
+        Note model = new Note();
+        View view = new View();
+        NoteController controller = new NoteController(model, view);
+        controller.processUser();
     }
+
 }

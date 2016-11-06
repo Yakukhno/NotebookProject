@@ -136,7 +136,7 @@ public class NoteController {
      * @param pattern regular expression pattern
      * @return valid user's input
      */
-    private String readUserInput(Scanner scanner, String pattern) {
+    public String readUserInput(Scanner scanner, String pattern) {
         String userInput = scanner.next();
         if (userInput.matches(pattern)) {
             return userInput;
@@ -151,7 +151,7 @@ public class NoteController {
      * @param scanner
      * @return true, if user inputs 'y', and false, if user inputs any other data
      */
-    private boolean isUserInputYesOrNo(Scanner scanner) {
+    public boolean isUserInputYesOrNo(Scanner scanner) {
         String userInput = scanner.next();
         if (userInput.equals("y")) {
             return true;

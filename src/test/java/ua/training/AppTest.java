@@ -1,38 +1,49 @@
 package ua.training;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
+import org.junit.Assert;
+import ua.training.controllers.NoteController;
+import ua.training.models.Note;
+import ua.training.views.View;
+
+import java.util.Scanner;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
-{
+public class AppTest {
+
     /**
-     * Create the test case
-     *
-     * @param testName name of the test case
+     * Method test method createFullName() from class Note
      */
-    public AppTest( String testName )
-    {
-        super( testName );
+    @Test
+    public void testCreateFullName() {
+        Note model = new Note();
+        model.setFirstName("Ivan");
+        model.setLastName("Petrov");
+        model.createFullName();
+        Assert.assertEquals("Petrov I.", model.getFullName());
     }
 
     /**
-     * @return the suite of tests being tested
+     * Method test method isUserInputYesOrNo() from class NoteController
      */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test
+    public void testIsUserInputYesOrNo() {
+        NoteController controller = new NoteController(new Note(), new View());
+        Assert.assertTrue(controller.isUserInputYesOrNo(new Scanner("y")));
     }
 
     /**
-     * Rigourous Test :-)
+     * Method test method readUserInput() from class NoteController
      */
-    public void testApp()
-    {
-        assertTrue( true );
+    @Test
+    public void testReadUserInput() {
+        NoteController controller = new NoteController(new Note(), new View());
+        String string = "abcd";
+        Assert.assertEquals(controller.readUserInput(new Scanner(string),
+                "a[bc]{2}d"), string);
     }
+
+
 }

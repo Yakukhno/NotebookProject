@@ -48,6 +48,9 @@ public class Note {
     /** Address */
     private Address address;
 
+    /** Full address */
+    private String fullAddress;
+
     /** Creation date of note */
     private Date initialDate;
 
@@ -57,6 +60,13 @@ public class Note {
     /** Method creates full name from last name and first letter of first name */
     public void createFullName() {
         fullName = lastName + " " + firstName.charAt(0) + ".";
+    }
+
+    /** Method creates full address */
+    public void createFullAddress() {
+        fullAddress = address.getPostalCode() + ", " + address.getCity() + ", "
+                + address.getStreet() + " " + address.getHouseNumber()
+                + " flat " + address.getFlatNumber();
     }
 
     //getters & setters
@@ -165,6 +175,14 @@ public class Note {
         this.address = address;
     }
 
+    public String getFullAddress() {
+        return fullAddress;
+    }
+
+    public void setFullAddress(String fullAddress) {
+        this.fullAddress = fullAddress;
+    }
+
     public Date getInitialDate() {
         return initialDate;
     }
@@ -179,5 +197,27 @@ public class Note {
 
     public void setLastChangeDate(Date lastChangeDate) {
         this.lastChangeDate = lastChangeDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Note{" +
+                "firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", fullName='" + fullName + '\'' +
+                ", username='" + username + '\'' +
+                ", comment='" + comment + '\'' +
+                ", group=" + group +
+                ", homePhone='" + homePhone + '\'' +
+                ", cellPhone='" + cellPhone + '\'' +
+                ", cellPhoneOptional='" + cellPhoneOptional + '\'' +
+                ", email='" + email + '\'' +
+                ", skype='" + skype + '\'' +
+                ", address=" + address +
+                ", fullAddress='" + fullAddress + '\'' +
+                ", initialDate=" + initialDate +
+                ", lastChangeDate=" + lastChangeDate +
+                '}';
     }
 }

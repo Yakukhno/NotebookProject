@@ -63,4 +63,15 @@ public class Address {
     public void setFlatNumber(String flatNumber) {
         this.flatNumber = flatNumber;
     }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "postalCode='" + postalCode + '\'' +
+                ", city='" + city + '\'' +
+                ", street='" + street + '\'' +
+                ", houseNumber='" + houseNumber + '\'' +
+                ", flatNumber='" + flatNumber + '\'' +
+                '}';
+    }
 }

@@ -42,7 +42,8 @@ public class View {
 
     /** Asking optional cell phone message */
     public static final String ASK_OPTIONAL_CELL_PHONE_MESSAGE = "Do you" +
-            " want to enter additional cell phone number? Write 'y', if you want.";
+            " want to enter additional cell phone number? Write 'y'," +
+            " if you want, or anything else, if you don't want.";
 
     /** Additional cell phone message */
     public static final String OPTIONAL_CELL_PHONE_MESSAGE = "Please, enter" +

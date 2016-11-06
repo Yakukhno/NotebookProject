@@ -5,6 +5,7 @@ import ua.training.models.Group;
 import ua.training.models.Note;
 import ua.training.views.View;
 
+import java.util.Date;
 import java.util.Scanner;
 
 /**
@@ -127,6 +128,10 @@ public class NoteController {
         address.setFlatNumber(readUserInput(scanner, REGEX_FLAT_NUMBER));
 
         model.setAddress(address);
+        model.createFullAddress();
+
+        model.setInitialDate(new Date());
+        model.setLastChangeDate(new Date());
 
     }
 

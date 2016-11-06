@@ -3,25 +3,63 @@ package ua.training.models;
 import java.util.Date;
 
 /**
- * Created by Ivan on 06.11.2016.
+ * The model describes note in notebook.
+ * @version 1.0
+ * @author Ivan Yakukhno
  */
 public class Note {
 
+    /** First name */
     private String firstName;
+
+    /** Middle name */
     private String middleName;
+
+    /** Last name */
     private String lastName;
+
+    /** Full name */
     private String fullName;
+
+    /** Username */
     private String username;
+
+    /** Comment */
     private String comment;
+
+    /** Group */
     private Group group;
+
+    /** Home number in format 0-yyy-xxxxxx */
     private String homePhone;
+
+    /** Home number in format 0yy-xxx-xx-xx */
     private String cellPhone;
+
+    /** Additional home number in format 0yy-xxx-xx-xx */
     private String cellPhoneOptional;
+
+    /** E-mail */
     private String email;
+
+    /** Skype username */
     private String skype;
+
+    /** Address */
     private Address address;
+
+    /** Creation date of note */
     private Date initialDate;
+
+    /** Data of last change of note */
     private Date lastChangeDate;
+
+    /** Method creates full name from last name and first letter of first name */
+    public void createFullName() {
+        fullName = lastName + " " + firstName.charAt(0) + ".";
+    }
+
+    //getters & setters
 
     public String getFirstName() {
         return firstName;

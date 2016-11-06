@@ -1,15 +1,28 @@
 package ua.training.models;
 
 /**
- * Created by Ivan on 06.11.2016.
+ * The model describes address.
+ * @version 1.0
+ * @author Ivan Yakukhno
  */
 public class Address {
 
+    /** Postal code in format xxxxx */
     private String postalCode;
+
+    /** City */
     private String city;
+
+    /** Street */
     private String street;
+
+    /** Number of house */
     private String houseNumber;
+
+    /** Number of flat */
     private String flatNumber;
+
+    //getters & setters
 
     public String getPostalCode() {
         return postalCode;

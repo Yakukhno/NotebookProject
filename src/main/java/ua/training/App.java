@@ -5,11 +5,16 @@ import ua.training.models.Note;
 import ua.training.views.View;
 
 /**
- * Main class
- *
+ * The main class.
+ * @version 1.0
+ * @author Ivan Yakukhno
  */
 public class App {
 
+    /**
+     * Main method
+     * @param args console arguments
+     */
     public static void main(String[] args) {
         Note model = new Note();
         View view = new View();

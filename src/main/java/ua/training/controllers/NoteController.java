@@ -64,6 +64,8 @@ public class NoteController {
 
         view.showMessage(View.SKYPE_MESSAGE);
         model.setSkype(readUserInput(scanner, REGEX_SKYPE));
+
+        view.showMessage(View.ADDRESS_MESSAGE);
     }
 
     private String readUserInput(Scanner scanner, String pattern) {

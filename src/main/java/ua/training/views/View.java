@@ -22,12 +22,12 @@ public class View {
             " second cell phone number(optional):";
     public static final String EMAIL_MESSAGE = "Please, enter email:";
     public static final String SKYPE_MESSAGE = "Please, enter skype:";
-    public static final String ADDRESS_MESSAGE = "Please, enter address:";
-    public static final String ZIP_MESSAGE = "Zip:";
+    public static final String ADDRESS_MESSAGE = "Please, enter address";
+    public static final String ZIP_MESSAGE = "Postal code:";
     public static final String CITY_MESSAGE = "City:";
     public static final String STREET_MESSAGE = "Street:";
-    public static final String HOME_NUMBER_MESSAGE = "Home:";
-    public static final String FLAT_NUMBER_MESSAGE = "Flat:";
+    public static final String HOME_NUMBER_MESSAGE = "House number:";
+    public static final String FLAT_NUMBER_MESSAGE = "Flat number:";
     public static final String ERROR_MESSAGE = "Wrong input data, enter again:";
 
     public void showMessage(String string) {

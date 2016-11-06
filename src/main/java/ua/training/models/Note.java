@@ -19,7 +19,7 @@ public class Note {
     private String cellPhoneOptional;
     private String email;
     private String skype;
-    private String address;
+    private Address address;
     private Date initialDate;
     private Date lastChangeDate;
 
@@ -119,11 +119,11 @@ public class Note {
         this.skype = skype;
     }
 
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
